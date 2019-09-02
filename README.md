@@ -79,7 +79,7 @@ git.add(1);
 git.add("");
 ```
 
-# commit
+## commit
 
 ```javascript
 // ...
@@ -95,7 +95,7 @@ git.commit();
 git.add({ name: "hoge" }).commit({ message: "Hello" });
 ```
 
-# subscribe
+## subscribe
 
 ```javascript
 // ...
@@ -115,7 +115,7 @@ git.add({ name: "hoge" }); // Add was executed !
 git.commit(); // Commit was executed !
 ```
 
-# getIndex
+## getIndex
 
 ```javascript
 // ...
@@ -133,7 +133,7 @@ git.commit();
 state = git.getIndex(); // null
 ```
 
-# getState
+## getState
 
 ```javascript
 // ...
@@ -151,7 +151,7 @@ git.commit();
 state = git.getState(); // { name: "hoge", age: 31 }
 ```
 
-# getCurrentState
+## getCurrentState
 
 ```javascript
 // ...
@@ -169,7 +169,7 @@ git.commit();
 state = git.getCurrentState(); // { name: "hoge", age: 31 }
 ```
 
-# getLogs
+## getLogs
 
 ```javascript
 // ...
@@ -193,7 +193,7 @@ logs = git.getIndex();
 */
 ```
 
-# clearIndex
+## clearIndex
 
 ```javascript
 // ...
@@ -211,7 +211,7 @@ git.clearIndex();
 state = git.getIndex(); // null
 ```
 
-# revertLog
+## revertLog
 
 ```javascript
 // ...
@@ -242,7 +242,7 @@ state = git.getState(); // { name: "John", age: 31 }
 logs = git.getLogs(); // []
 ```
 
-# remote.set
+## remote.set
 
 ```javascript
 // ...
@@ -265,7 +265,7 @@ git.remote("origin", {});
 git.remote("origin", { push: () => updateUser() });
 ```
 
-# push
+## push
 
 ```javascript
 // ...
@@ -281,7 +281,7 @@ git.push();
 git.push("unknown");
 ```
 
-# pull
+## pull
 
 ```javascript
 // ...
