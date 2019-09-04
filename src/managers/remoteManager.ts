@@ -26,7 +26,7 @@ export const createRemoteManager = <T extends object>(): RemoteManagerType<
 
       if (push) return push(cb);
 
-      throw new Error("");
+      throw new Error("The push function is not implemented");
     },
 
     pull: (remote_name, cb) => {
@@ -34,7 +34,7 @@ export const createRemoteManager = <T extends object>(): RemoteManagerType<
 
       if (pull) return pull(cb);
 
-      throw new Error("");
+      throw new Error("The pull function is not implemented");
     },
 
     setPush: (remote_name, cb) => {
@@ -43,7 +43,7 @@ export const createRemoteManager = <T extends object>(): RemoteManagerType<
         return;
       }
 
-      throw new Error("");
+      throw new Error("The remote already has a push function");
     },
 
     setPull: (remote_name, cb) => {
@@ -52,7 +52,7 @@ export const createRemoteManager = <T extends object>(): RemoteManagerType<
         return;
       }
 
-      throw new Error("");
+      throw new Error("The remote already has a pull function");
     }
   };
 };
