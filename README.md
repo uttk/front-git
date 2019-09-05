@@ -1,6 +1,7 @@
 # Front-Git
 
 This is a framework for JavaScript (TypeScript) that can manage data like Git.
+
 Since it was made for studying, there is no practicality so far.
 
 # Example
